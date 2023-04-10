@@ -1,0 +1,22 @@
+[
+    {
+        "icon": "https://img.freepik.com/free-vector/invoice-concept-illustration_114360-2411.jpg?w=740&t=st=1681144319~exp=1681144919~hmac=5df214cdae747708b888a477e59dcf0847825262657d0a27c118318be6b57616",
+        "title": "Account & Finance",
+        "jobs": 300
+    },
+    {
+        "icon": "https://img.freepik.com/free-vector/colorful-gradient-modern-art-fluid-background_1340-11365.jpg?size=626&ext=jpg",
+        "title": "Creative Design",
+        "jobs": 220
+    },
+    {
+        "icon": "https://img.freepik.com/free-vector/marketing-consulting-concept-illustration_114360-9027.jpg?w=1060&t=st=1681145909~exp=1681146509~hmac=88da23330ca76737b09f13f5064a208f70c5d2ced61aad0bc607c614d6b4b2fd",
+        "title": "Marketing & Sales",
+        "jobs": 348
+    },
+    {
+        "icon": "https://img.freepik.com/free-vector/flat-design-cms-concept-illustrated_23-2148796510.jpg?size=626&ext=jpg",
+        "title": "Engineering Job",
+        "jobs": 242
+    }
+]
