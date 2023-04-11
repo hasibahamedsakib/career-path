@@ -3,7 +3,7 @@ import React from "react";
 const SingleFeature = ({ featureJob }) => {
   const { position, logo, company, jobType, location, salary, id } = featureJob;
   return (
-    <div className="border rounded-lg p-10">
+    <div className="border rounded-lg px-10 py-6">
       <img className="w-36 h-12 my-6" src={logo} alt="" />
       <h3 className="text-2xl font-semibold py-3 text-gray-700">{position}</h3>
       <h4 className="text-xl text-slate-600 ">{company}</h4>

@@ -2,12 +2,14 @@ import React, { useEffect, useState } from "react";
 import SingleFeature from "../SingleFeature/SingleFeature";
 
 const FeaturedJobs = () => {
+  const [togol, setTogol] = useState(false);
   const [featuredJob, setFeaturedJob] = useState([]);
   useEffect(() => {
     fetch("featuredJobs.json")
       .then((res) => res.json())
       .then((data) => setFeaturedJob(data));
   }, []);
+
   console.log(featuredJob);
   return (
     <div className="container">
@@ -19,12 +21,20 @@ const FeaturedJobs = () => {
         </p>
       </div>
       <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-6">
-        {featuredJob.map((featureJob) => (
-          <SingleFeature key={featureJob.id} featureJob={featureJob} />
-        ))}
+        {togol
+          ? featuredJob.map((featureJob) => (
+              <SingleFeature key={featureJob.id} featureJob={featureJob} />
+            ))
+          : featuredJob
+              .slice(0, 4)
+              .map((featureJob) => (
+                <SingleFeature key={featureJob.id} featureJob={featureJob} />
+              ))}
       </div>
       <div className="text-center">
-        <button className="btn-purple my-10 ">See All Jobs</button>
+        <button onClick={() => setTogol(!togol)} className="btn-purple my-10 ">
+          See All Jobs
+        </button>
       </div>
     </div>
   );
