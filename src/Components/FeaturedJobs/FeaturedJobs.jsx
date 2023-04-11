@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import SingleFeature from "../SingleFeature/SingleFeature";
 
 const FeaturedJobs = () => {
-  const [togol, setTogol] = useState(false);
+  const [seeMore, setSeeMore] = useState(false);
   const [featuredJob, setFeaturedJob] = useState([]);
   useEffect(() => {
     fetch("featuredJobs.json")
@@ -10,7 +10,6 @@ const FeaturedJobs = () => {
       .then((data) => setFeaturedJob(data));
   }, []);
 
-  console.log(featuredJob);
   return (
     <div className="container">
       <div className="text-center">
@@ -21,7 +20,7 @@ const FeaturedJobs = () => {
         </p>
       </div>
       <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-6">
-        {togol
+        {seeMore
           ? featuredJob.map((featureJob) => (
               <SingleFeature key={featureJob.id} featureJob={featureJob} />
             ))
@@ -32,7 +31,10 @@ const FeaturedJobs = () => {
               ))}
       </div>
       <div className="text-center">
-        <button onClick={() => setTogol(!togol)} className="btn-purple my-10 ">
+        <button
+          onClick={() => setSeeMore(!seeMore)}
+          className="btn-purple my-10 "
+        >
           See All Jobs
         </button>
       </div>
