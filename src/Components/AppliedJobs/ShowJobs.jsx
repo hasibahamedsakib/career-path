@@ -1,8 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const ShowJobs = ({ jobs }) => {
-  const { position, company, location, jobType, logo } = jobs;
-
+  const { position, company, location, jobType, logo, id } = jobs;
+  const navigate = useNavigate();
   return (
     <div className="border p-6 rounded-md my-4 flex  items-center">
       <div className="bg-gray-100 rounded-md p-8">
@@ -20,7 +21,12 @@ const ShowJobs = ({ jobs }) => {
           </div>
           <h4 className="text-xl text-slate-500 py-2">{location}</h4>
         </div>
-        <button className="btn-purple ">View Details</button>
+        <button
+          className="btn-purple "
+          onClick={() => navigate(`/details/${id}`)}
+        >
+          View Details
+        </button>
       </div>
     </div>
   );
