@@ -10,5 +10,65 @@
         ],
         "location": "Dhaka, Bangladesh",
         "salary": "100K - 150K"
+    },
+    {
+        "id": 102,
+        "position": "Senior Product Designer",
+        "company": "Netflix",
+        "logo": "https://www.freepnglogos.com/uploads/red-netflix-logo-text-png-3.png",
+        "job-type": [
+            "Onsite",
+            "Full Time"
+        ],
+        "location": "Dhaka, Bangladesh",
+        "salary": "120K - 150K"
+    },
+    {
+        "id": 103,
+        "position": "Software Engineer",
+        "company": "Netflix",
+        "logo": "https://www.freepnglogos.com/uploads/tesla-logo-png-20.png",
+        "job-type": [
+            "Onsite",
+            "Full Time"
+        ],
+        "location": "Dublin",
+        "salary": "140K - 160K"
+    },
+    {
+        "id": 104,
+        "position": "Software Engineer",
+        "company": "Microsoft",
+        "logo": "https://www.freepnglogos.com/uploads/microsoft-logo-4.png",
+        "job-type": [
+            "Remote",
+            "Full Time"
+        ],
+        "location": "Ireland",
+        "salary": "140K - 160K"
+    },
+    {
+        "id": 105,
+        "position": "Backend Engineer",
+        "company": "ChatGPT",
+        "logo": "https://media.smallbiztrends.com/2023/01/what-is-chatgpt.png",
+        "job-type": [
+            "onsite",
+            "Full Time"
+        ],
+        "location": "USA",
+        "salary": "100K - 120K"
+    },
+    {
+        "id": 106,
+        "position": "Frontend Developer",
+        "company": "Programming Hero",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXxtn7Iuw79EGLElIEVoP2hxKz1U8qmTj55w&usqp=CAU",
+        "job-type": [
+            "Remote",
+            "Full Time"
+        ],
+        "location": "Dhaka, Bangladesh",
+        "salary": "40K - 50K"
     }
 ]

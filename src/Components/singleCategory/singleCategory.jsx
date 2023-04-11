@@ -1,7 +1,6 @@
 import React from "react";
 
 const SingleCategory = ({ jobs }) => {
-  console.log(jobs);
   return (
     <div className="bg-[#f9f9ff] rounded-md py-8 px-10">
       <img className="w-20 h-16" src={jobs.icon} alt="" />
