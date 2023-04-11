@@ -8,9 +8,9 @@ export default function ErrorPage() {
       <h1>Oops!</h1>
       <p>Sorry, an unexpected error has occurred.</p>
       <p>
-        <li>{error.status}</li>
-        <li>{error.statusText}</li>
-        <li>{error.error.message}</li>
+        <li>{error?.status}</li>
+        <li>{error?.statusText}</li>
+        <li>{error?.error?.message}</li>
       </p>
     </div>
   );

@@ -10,7 +10,7 @@ const JobDetails = () => {
 
   return (
     <div className="">
-      <h1 className="text-center text-4xl bg-[#f9f9ff] p-10 font-bold">
+      <h1 className="text-center text-4xl bg-[#f9f9ff] p-14 font-bold">
         Job Details
       </h1>
       {myData.map((data) => (
