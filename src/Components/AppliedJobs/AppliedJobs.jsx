@@ -14,7 +14,9 @@ const AppliedJobs = () => {
   let allJobs = [];
   for (const id in storeJobs) {
     const jobs = totalJobs.find((pd) => pd.id === +id);
-    allJobs.push(jobs);
+    if (jobs) {
+      allJobs.push(jobs);
+    }
   }
   // console.log(allJobs);
   return (
@@ -23,9 +25,8 @@ const AppliedJobs = () => {
         Applied Jobs
       </h1>
       <div className="container">
-        {allJobs?.map((job, indx) => (
-          <ShowJobs key={indx} jobs={job} />
-        ))}
+        {allJobs &&
+          allJobs?.map((job, indx) => <ShowJobs key={indx} jobs={job} />)}
       </div>
     </div>
   );

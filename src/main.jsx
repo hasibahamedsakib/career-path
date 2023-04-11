@@ -25,7 +25,7 @@ const router = createBrowserRouter([
         path: "/details/:id",
         element: <JobDetails />,
         errorElement: <ErrorPage />,
-        loader: () => fetch("featuredJobs.json"),
+        loader: () => fetch("/featuredJobs.json"),
       },
       {
         path: "statistics",
@@ -34,7 +34,6 @@ const router = createBrowserRouter([
       {
         path: "applied-jobs",
         element: <AppliedJobs />,
-        // loader: () => fetch("featuredJobs.json"),
       },
       {
         path: "blog",
@@ -45,7 +44,7 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+  // <React.StrictMode>
+  <RouterProvider router={router} />
+  // </React.StrictMode>
 );
