@@ -4,7 +4,7 @@
         "position": "Technical Database Engineer",
         "company": "Google LLC",
         "logo": "https://img.freepik.com/premium-vector/google-search-logo_578229-273.jpg?w=1380",
-        "job-type": [
+        "jobType": [
             "Remote",
             "Full Time"
         ],
@@ -15,8 +15,8 @@
         "id": 102,
         "position": "Senior Product Designer",
         "company": "Netflix",
-        "logo": "https://www.freepnglogos.com/uploads/red-netflix-logo-text-png-3.png",
-        "job-type": [
+        "logo": "https://1000logos.net/wp-content/uploads/2017/05/Netflix-Logo-768x432.png",
+        "jobType": [
             "Onsite",
             "Full Time"
         ],
@@ -26,9 +26,9 @@
     {
         "id": 103,
         "position": "Software Engineer",
-        "company": "Netflix",
+        "company": "Tesla",
         "logo": "https://www.freepnglogos.com/uploads/tesla-logo-png-20.png",
-        "job-type": [
+        "jobType": [
             "Onsite",
             "Full Time"
         ],
@@ -39,8 +39,8 @@
         "id": 104,
         "position": "Software Engineer",
         "company": "Microsoft",
-        "logo": "https://www.freepnglogos.com/uploads/microsoft-logo-4.png",
-        "job-type": [
+        "logo": "https://1000logos.net/wp-content/uploads/2017/04/Microsoft-Logo-768x251.png",
+        "jobType": [
             "Remote",
             "Full Time"
         ],
@@ -52,7 +52,7 @@
         "position": "Backend Engineer",
         "company": "ChatGPT",
         "logo": "https://media.smallbiztrends.com/2023/01/what-is-chatgpt.png",
-        "job-type": [
+        "jobType": [
             "onsite",
             "Full Time"
         ],
@@ -62,13 +62,13 @@
     {
         "id": 106,
         "position": "Frontend Developer",
-        "company": "Programming Hero",
-        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXxtn7Iuw79EGLElIEVoP2hxKz1U8qmTj55w&usqp=CAU",
-        "job-type": [
+        "company": "Amazon",
+        "logo": "https://1000logos.net/wp-content/uploads/2019/06/Amazon-Logo.jpg",
+        "jobType": [
             "Remote",
             "Full Time"
         ],
         "location": "Dhaka, Bangladesh",
-        "salary": "40K - 50K"
+        "salary": "130K - 150K"
     }
 ]

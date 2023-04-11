@@ -23,6 +23,9 @@ const FeaturedJobs = () => {
           <SingleFeature key={featureJob.id} featureJob={featureJob} />
         ))}
       </div>
+      <div className="text-center">
+        <button className="btn-purple my-10 ">See All Jobs</button>
+      </div>
     </div>
   );
 };
