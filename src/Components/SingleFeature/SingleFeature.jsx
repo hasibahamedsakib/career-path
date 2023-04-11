@@ -1,6 +1,6 @@
+import { CurrencyDollarIcon, MapPinIcon } from "@heroicons/react/24/outline";
 import React from "react";
 import { Link } from "react-router-dom";
-
 const SingleFeature = ({ featureJob }) => {
   const { position, logo, company, jobType, location, salary, id } = featureJob;
   return (
@@ -13,8 +13,12 @@ const SingleFeature = ({ featureJob }) => {
         <p className="border py-3 px-5 rounded-md">{jobType[1]}</p>
       </div>
       <div className="flex gap-x-4">
-        <h4 className="text-xl text-slate-600 my-2">{location}</h4>
-        <h4 className="text-xl text-slate-600 my-2">Salary : {salary}</h4>
+        <h4 className="text-xl text-slate-600 my-2 flex items-center gap-1">
+          <MapPinIcon className="h-5 w-5" /> {location}
+        </h4>
+        <h4 className="text-xl text-slate-600 my-2 flex items-center gap-1">
+          <CurrencyDollarIcon className="h-5 w-5" /> Salary : {salary}
+        </h4>
       </div>
       <Link to={`/details/${id}`}>
         <button className="btn-purple my-5">View Details</button>

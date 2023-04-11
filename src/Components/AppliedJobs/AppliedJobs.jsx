@@ -38,8 +38,9 @@ const AppliedJobs = () => {
             <option>Onsite</option>
           </select>
         </div>
-        {allJobs &&
-          allJobs?.map((job, indx) => <ShowJobs key={indx} jobs={job} />)}
+        {allJobs?.map((job, indx) => (
+          <ShowJobs key={indx} jobs={job} />
+        ))}
       </div>
     </div>
   );
