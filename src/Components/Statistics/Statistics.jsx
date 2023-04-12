@@ -15,7 +15,7 @@ const Statistics = () => {
     },
     {
       name: "Assignment 2",
-      mark: 46,
+      mark: 56,
     },
     {
       name: "Assignment 3",
@@ -31,7 +31,7 @@ const Statistics = () => {
     },
     {
       name: "Assignment 6",
-      mark: 48,
+      mark: 58,
     },
     {
       name: "Assignment 7",
