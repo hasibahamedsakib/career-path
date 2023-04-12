@@ -43,14 +43,25 @@ const Statistics = () => {
     },
   ];
   return (
-    <div className="container mx-auto">
-      <AreaChart width={1200} height={400} data={data}>
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="name" />
-        <YAxis />
-        <Tooltip />
-        <Area type="monotone" dataKey="mark" stroke="#8884d8" fill="#8884d8" />
-      </AreaChart>
+    <div>
+      <h1 className="text-center text-4xl bg-[#f9f9ff] p-14  font-bold ">
+        Statistics
+      </h1>
+
+      <div className="container mx-auto">
+        <AreaChart width={1200} height={400} data={data}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip />
+          <Area
+            type="monotone"
+            dataKey="mark"
+            stroke="#8884d8"
+            fill="#8884d8"
+          />
+        </AreaChart>
+      </div>
     </div>
   );
 };
