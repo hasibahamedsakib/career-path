@@ -13,6 +13,12 @@ const Navbar = () => {
         <div className="space-x-8 text-gray-800 font-semibold">
           <NavLink
             className={({ isActive }) => (isActive ? "active" : "")}
+            to="/"
+          >
+            Home
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : "")}
             to="/statistics"
           >
             Statistics

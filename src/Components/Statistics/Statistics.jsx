@@ -15,7 +15,7 @@ const Statistics = () => {
     },
     {
       name: "Assignment 2",
-      mark: 40,
+      mark: 46,
     },
     {
       name: "Assignment 3",
@@ -31,16 +31,20 @@ const Statistics = () => {
     },
     {
       name: "Assignment 6",
-      mark: 38,
+      mark: 48,
     },
     {
       name: "Assignment 7",
       mark: 60,
     },
+    {
+      name: "Assignment 8",
+      mark: 58,
+    },
   ];
   return (
     <div className="container mx-auto">
-      <AreaChart width={1020} height={400} data={data}>
+      <AreaChart width={1200} height={400} data={data}>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="name" />
         <YAxis />
