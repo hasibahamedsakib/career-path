@@ -10,7 +10,7 @@ const Navbar = () => {
             Career<span className="text-red-400">Path</span>
           </h1>
         </Link>
-        <div className="space-x-8 text-gray-800 font-semibold">
+        <div className="space-x-8 text-gray-800 font-semibold flex flex-col md:flex-row gap-y-6 md:gap-y-0  ">
           <NavLink
             className={({ isActive }) => (isActive ? "active" : "")}
             to="/"
