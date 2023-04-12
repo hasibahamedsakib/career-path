@@ -3,16 +3,16 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="bg-gray-900 text-white">
-      <div className="  container grid grid-cols-1 md:grid-cols-5 gap-4  ">
+      <div className="  container grid grid-cols-1 md:grid-cols-5 gap-4 space-y-5 ">
         <div className="w-44">
-          <h1 className="text-3xl">CareerHub</h1>
+          <h1 className="text-3xl  pb-4">CareerHub</h1>
           <p>
             There are many variations of passages of Lorem Ipsum , but the
             majority have suffered alteration in some form.
           </p>
         </div>
         <div>
-          <h1 className="text-xl">Company</h1>
+          <h1 className="text-xl pb-4">Company</h1>
           <li>About Us</li>
           <li>Work</li>
 
@@ -20,7 +20,7 @@ const Footer = () => {
           <li>Careers</li>
         </div>
         <div>
-          <h1 className="text-xl">Product</h1>
+          <h1 className="text-xl pb-4">Product</h1>
           <li>Prototype</li>
           <li>Plans & Pricing</li>
           <li>Customers</li>
@@ -28,14 +28,14 @@ const Footer = () => {
           <li>Integrations</li>
         </div>
         <div>
-          <h1 className="text-xl">Support</h1>
+          <h1 className="text-xl pb-4">Support</h1>
           <li>Help Desk</li>
           <li>Sales</li>
           <li>Become a Partner</li>
           <li>Developers</li>
         </div>
         <div>
-          <h1 className="text-xl">Contact</h1>
+          <h1 className="text-xl pb-4">Contact</h1>
           <li>524 Broadway , NYC</li>
           <li>+1 777 - 978 - 5570</li>
         </div>
