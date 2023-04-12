@@ -8,6 +8,7 @@
             "Remote",
             "Full Time"
         ],
+        "remote_or_onsite": "Remote",
         "location": "Dhaka, Bangladesh",
         "salary": "100K - 150K",
         "description": "A Technical Database Engineer designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
@@ -26,6 +27,7 @@
             "Onsite",
             "Full Time"
         ],
+        "remote_or_onsite": "Onsite",
         "location": "Dhaka, Bangladesh",
         "salary": "120K - 150K",
         "description": "A Senior Product Designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
@@ -44,6 +46,7 @@
             "Onsite",
             "Full Time"
         ],
+        "remote_or_onsite": "Onsite",
         "location": "Dublin",
         "salary": "140K - 160K",
         "description": "A Software Engineer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
@@ -62,6 +65,7 @@
             "Remote",
             "Full Time"
         ],
+        "remote_or_onsite": "Remote",
         "location": "Ireland",
         "salary": "140K - 160K",
         "description": "ASoftware Engineer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
@@ -80,6 +84,7 @@
             "Onsite",
             "Full Time"
         ],
+        "remote_or_onsite": "Onsite",
         "location": "USA",
         "salary": "100K - 120K",
         "description": "A Backend Engineer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
@@ -98,6 +103,7 @@
             "Remote",
             "Full Time"
         ],
+        "remote_or_onsite": "Remote",
         "location": "Dhaka, Bangladesh",
         "salary": "130K - 150K",
         "description": "A Frontend Developer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",

@@ -4,24 +4,8 @@ import ShowJobs from "../AppliedJobs/ShowJobs";
 
 const AppliedJobs = () => {
   const [totalJobs, setTotalJobs] = useState([]);
-  const [getJob, setGetJob] = useState([]);
-  const [select, setSelect] = useState("");
-  const [filterJob, setFilterJobs] = useState([]);
+
   const storeJobs = getShoppingCart();
-
-  // let myJob = [];
-  // const filteredJobs = (mapJobs) => {
-  //   const { jobType } = mapJobs;
-
-  //   if (jobType[0] == select) {
-  //     let newJob = allJobs.filter((job) => job.jobType[0] === jobType[0]);
-
-  //     if (newJob) {
-
-  //       // myJob.push(newJob);
-  //     }
-  //   }
-  // };
 
   useEffect(() => {
     fetch("/featuredJobs.json")
@@ -37,16 +21,15 @@ const AppliedJobs = () => {
     }
   }
 
-  let fJob = getJob.filter((job) => job.jobType[0] === select);
-  useEffect(() => {
-    if (allJobs) {
-      setGetJob(allJobs);
-    }
-    if (fJob) {
-      setFilterJobs([...filterJob, fJob]);
-    }
-  }, [totalJobs, select]);
-  console.log(filterJob);
+  //set filter onsite or Remote step-1
+  const [selectedFilter, setSelectedFilter] = useState("");
+  function handleFilterChange(event) {
+    setSelectedFilter(event.target.value);
+  }
+
+  const filteredJobs = selectedFilter
+    ? allJobs.filter((job) => job.remote_or_onsite === selectedFilter)
+    : allJobs;
 
   return (
     <div>
@@ -55,17 +38,27 @@ const AppliedJobs = () => {
       </h1>
       <div className="container">
         <div className="text-right">
-          <select
-            onChange={(e) => setSelect(e.target.value)}
-            className="border px-5 py-2 bg-slate-100 outline-none"
-          >
-            <option>Filter By </option>
-            <option value="Remote">Remote</option>
-            <option value="Onsite">Onsite</option>
-          </select>
+          {allJobs.length > 0 ? (
+            <div className="flex justify-end">
+              <select
+                className="select select-primary  max-w-xs bg-slate-100 outline-none py-3 px-5 rounded-md"
+                onChange={handleFilterChange}
+                value={selectedFilter}
+              >
+                <option disabled value="">
+                  Filter
+                </option>
+                <option value="Onsite">Onsite</option>
+                <option value="Remote">Remote</option>
+              </select>
+            </div>
+          ) : (
+            ""
+          )}
         </div>
-        {getJob &&
-          getJob?.map((job, indx) => <ShowJobs key={indx} jobs={job} />)}
+        {filteredJobs.map((job) => (
+          <ShowJobs key={job.id} jobs={job} />
+        ))}
       </div>
     </div>
   );

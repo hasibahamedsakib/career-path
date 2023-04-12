@@ -18,7 +18,7 @@ const JobCategory = () => {
           need. Its your future
         </p>
       </div>
-      <div className="flex justify-around items-center">
+      <div className=" grid grid-cols-1 md:grid-cols-4 gap-5">
         {jobCategory.map((job) => (
           <SingleCategory key={job.jobs} jobs={job} />
         ))}

@@ -4,8 +4,8 @@ import "./index.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
-import AppliedJobs from "./Components/AppliedJobs/AppliedJobs";
 import Blog from "./Components/Blog/Blog";
+import FilteredJobs from "./Components/FilteredJobs/FilteredJobs";
 import Home from "./Components/Home/Home";
 import JobDetails from "./Components/JobDetails/JobDetails";
 import Statistics from "./Components/Statistics/Statistics";
@@ -33,8 +33,8 @@ const router = createBrowserRouter([
       },
       {
         path: "applied-jobs",
-        element: <AppliedJobs />,
-        // element: <FilteredJobs />,
+
+        element: <FilteredJobs />,
       },
       {
         path: "blog",
